@@ -3,6 +3,12 @@
 A collection of string matching algorithms built with
 [React Select](https://github.com/JedWatson/react-select) in mind.
 
+## Installation
+
+```
+npm install --save fuzzy-match-utils
+```
+
 ## Usage
 
 This module exports four utility functions:
