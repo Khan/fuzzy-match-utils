@@ -1,0 +1,52 @@
+{
+  "name": "fuzzy-match-utils",
+  "version": "1.0.0",
+  "description": "A collection of string matching algorithms built with React Select in mind",
+  "main": "src/main.js",
+  "scripts": {
+    "prepublish": ". ./prepublish.sh",
+    "lint": "eslint src",
+    "lintfix": "eslint src --fix",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khan/fuzzy-match-utils.git"
+  },
+  "keywords": [
+    "distance",
+    "filter",
+    "fuzzy",
+    "Jaro-Winkler",
+    "Levenshtein",
+    "match",
+    "options",
+    "proximity",
+    "search",
+    "similar",
+    "similarity",
+    "string",
+    "subsequence",
+    "substitutions",
+    "text",
+    "typeahead",
+    "variations"
+  ],
+  "author": "rileyjshaw <i@rileyjshaw.com> (http://rileyjshaw.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Khan/fuzzy-match-utils/issues"
+  },
+  "homepage": "https://github.com/Khan/fuzzy-match-utils#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-latest": "^6.24.0",
+    "eslint": "^3.18.0",
+    "eslint-plugin-flowtype": "^2.30.4",
+    "eslint-plugin-react": "^6.10.3",
+    "flow-bin": "^0.42.0",
+    "uglify-js": "^2.8.16"
+  }
+}
