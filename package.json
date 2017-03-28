@@ -1,6 +1,6 @@
 {
   "name": "fuzzy-match-utils",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A collection of string matching algorithms built with React Select in mind",
   "main": "dist/fuzzy-match-utils.js",
   "scripts": {
