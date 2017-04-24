@@ -84,16 +84,12 @@ export function typeaheadSimilarity(a: string, b: string): number {
         [a, b] = [b, a];
     }
 
-    // Early exit if `a` startsWith `b`; these will be scored higher than any
+    // Early exit if `a` includes `b`; these will be scored higher than any
     // other options with the same `b` (filter string), with a preference for
     // shorter `a` strings (option labels).
-    if (a.indexOf(b) === 0) {
+    if (a.indexOf(b) !== -1) {
         return bLength + 1 / aLength;
     }
-
-    // TODO(riley): It would be nice if subsequence *proximity* was factored
-    //              in. For example, a filter string of "AL" should match
-    //              "wALnut grove" before it matches "wAtsonviLle"
 
     // Initialize the table axes:
     //
